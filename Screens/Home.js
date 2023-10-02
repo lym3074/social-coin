@@ -48,7 +48,7 @@ const Home = () => {
                 justifyContent: "space-between"
             }}
             keyExtractor={(item) => item.id}
-            renderItem={({item, index}) => <Coin index={index} symbol={item.symbol} />}
+            renderItem={({item, index}) => <Coin index={index} symbol={item.symbol} id={item.id}/>}
             />
         </Container>
     );
